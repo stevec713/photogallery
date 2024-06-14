@@ -109,3 +109,59 @@ header li:last-child {
 }
 
 /*---------- MAIN STYLES ----------*/
+/*---------- ABOUT ----------*/
+#about, #gallery {
+	background-color: var(--white);
+	padding: 20px 0;
+}
+
+#contact {
+	padding: 20px;
+	color: var(--white);
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#about p{
+	padding: 10px;
+}
+
+/*---------- GALLERY ----------*/
+#gallery > p {
+	padding: 10px;
+}
+
+#gallery figure {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+
+#gallery img {
+	width: 100%;
+}
+
+#gallery figcaption {
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	padding: 10px;
+	text-align: center;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+figure:nth-last-child(n+10) figcaption {
+	color: var(--white);
+}
+
+figure:first-child figcaption {
+	
+}
