@@ -158,6 +158,11 @@ li:last-child a:hover {
 	color: var(--green);
 }
 
+/*---------- VALID STYLE ----------*/
+input:not([type="submit"]):valid, textarea:valid {
+	background-color: #B4DBBF;
+}
+
 /*---------- MAIN STYLES ----------*/
 /*---------- ABOUT ----------*/
 #about, #gallery {
