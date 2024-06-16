@@ -195,13 +195,15 @@ h2 {
 	margin: 0 auto;
 	position: relative;
 	margin-bottom: 10px;
+	max-width: 420px;
 }
 
 #gallery img {
 	width: 100%;
+	margin: 0 auto;
 }
 
-figcaption {
+#gallery figcaption {
 	display: block;
 	width: 100%;
 	position: absolute;
@@ -211,19 +213,15 @@ figcaption {
 	font-weight: bold;
 }
 
-figure:nth-last-child(n+10) figcaption, figure:nth-child(9) figcaption, figure:last-child figcaption {
+figure:nth-last-child(n+10) figcaption, figure:nth-child(7) figcaption, figure:last-child figcaption {
 	color: var(--white);
 }
 
-figure:first-of-type figcaption, figure:nth-child(5) figcaption, figure:nth-child(9) figcaption {
+figure:first-of-type figcaption, figure:nth-child(3) figcaption, figure:nth-child(7) figcaption, figure:nth-child(6) figcaption {
 	bottom: 0;
 }
 
-figure:nth-child(8) figcaption {
-	bottom: 0;
-}
-
-figure:nth-child(n+10) figcaption, figure:nth-child(7) figcaption, figure:nth-last-child(2n+9) figcaption {
+figure:nth-child(n+8) figcaption, figure:nth-child(5) figcaption, figure:nth-last-child(2n+9) figcaption {
 	top: 0;
 }
 
@@ -285,7 +283,7 @@ form textarea {
 
 [type="submit"] {
 	padding: 10px;
-	width: 250px;
+	width: 70%;
 	margin: 5px auto;
 	border-radius: 15px;
 	background-color: var(--green);
@@ -302,4 +300,42 @@ footer {
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
+}
+
+/*---------- MEDIA QUERIES ----------*/
+@media screen and (min-width:880px) {
+	h1{
+		text-align: start;
+		padding-left: 10px;
+	}
+
+	#gallery div {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 10px;
+		gap: 20px;
+		justify-items: center;
+	}
+
+	#gallery figure {
+		height: fit-content;
+		width: fit-content;
+		margin: 0;
+	}
+
+	#gallery img {
+		max-width: 420px;
+	}
+}
+
+@media screen and (min-width:1300px) {
+	ul {
+		justify-content: end;
+	}
+
+	#gallery div {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 10px;
+	}
 }

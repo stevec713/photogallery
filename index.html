@@ -36,6 +36,7 @@
                 <h2>Gallery</h2>
                 <p>Here are some highlights of my work. The locations and year are in the caption.</p>
                 
+                <div>
                 <figure>
                     <img src="images/Chile.png" alt="a sun setting on the beach in Chile">
                     <figcaption>Chile, <time>2001</time></figcaption>
@@ -95,6 +96,7 @@
                     <img src="images/Wyoming.png" alt="a lake in the woods with a mountain in the background in Wyoming">
                     <figcaption>Wyoming, <time>2021</time></figcaption>
                 </figure>
+                </div>
             </section>
 
             <section id="contact">
@@ -103,13 +105,13 @@
                 <form action="#" method="POST">
                     <p>Your contact information</p>
                     <label for="my-name">Name</label>
-                    <input type="text" name="my-name" id="my-name" placeholder="Your full name">
+                    <input type="text" name="my-name" id="my-name" placeholder="Your full name" required>
 
                     <label for="my-email">Email</label>
-                    <input type="email" name="my-email" id="my-email" placeholder="Enter your email address">
+                    <input type="email" name="my-email" id="my-email" placeholder="Enter your email address" required>
 
                     <label for="my-message">Message</label>
-                    <textarea name="my-message" id="my-message" placeholder="What can I help you with?"></textarea>
+                    <textarea name="my-message" id="my-message" placeholder="What can I help you with?" required></textarea>
 
                     <input type="submit" name="my-submit" id="my-submit" value="Submit">
                 </form>
